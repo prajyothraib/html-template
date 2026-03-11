@@ -1,8 +1,139 @@
-<!doctype html5>
-<html>
-	<head>
-        <title>заголовок страницы</title>
-	</head>
-	<body>
-	</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open UI Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+<h1>Open UI Library</h1>
+
+<nav>
+<ul>
+<li><a href="#buttons">Buttons</a></li>
+<li><a href="#cards">Cards</a></li>
+<li><a href="#alerts">Alerts</a></li>
+<li><a href="#modal">Modal</a></li>
+<li><a href="#tabs">Tabs</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Modern UI Components</h2>
+<p>Reusable components built using HTML CSS and JavaScript.</p>
+<button class="btn primary">Get Started</button>
+</section>
+
+<section id="buttons" class="section">
+
+<h2>Buttons</h2>
+
+<button class="btn primary">Primary</button>
+<button class="btn success">Success</button>
+<button class="btn danger">Danger</button>
+<button class="btn warning">Warning</button>
+
+</section>
+
+<section id="cards" class="section">
+
+<h2>Cards</h2>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://picsum.photos/300/200">
+<h3>Card Title</h3>
+<p>Example card component.</p>
+<button class="btn primary">Read More</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/201">
+<h3>Card Title</h3>
+<p>Example card component.</p>
+<button class="btn primary">Read More</button>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300/202">
+<h3>Card Title</h3>
+<p>Example card component.</p>
+<button class="btn primary">Read More</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="alerts" class="section">
+
+<h2>Alerts</h2>
+
+<div class="alert success">Success alert</div>
+<div class="alert danger">Error alert</div>
+<div class="alert warning">Warning alert</div>
+
+</section>
+
+<section id="modal" class="section">
+
+<h2>Modal</h2>
+
+<button onclick="openModal()" class="btn primary">Open Modal</button>
+
+</section>
+
+<div id="modalBox" class="modal">
+
+<div class="modal-content">
+
+<span onclick="closeModal()" class="close">&times;</span>
+
+<h2>Modal Title</h2>
+<p>This is a modal component.</p>
+
+</div>
+
+</div>
+
+<section id="tabs" class="section">
+
+<h2>Tabs</h2>
+
+<div class="tabs">
+
+<button onclick="openTab(event,'tab1')" class="tablink active">HTML</button>
+<button onclick="openTab(event,'tab2')" class="tablink">CSS</button>
+<button onclick="openTab(event,'tab3')" class="tablink">JavaScript</button>
+
+</div>
+
+<div id="tab1" class="tabcontent active">
+<p>HTML structure content.</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+<p>CSS styling content.</p>
+</div>
+
+<div id="tab3" class="tabcontent">
+<p>JavaScript behavior content.</p>
+</div>
+
+</section>
+
+<footer>
+<p>Open Source UI Library</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
 </html>
